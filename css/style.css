@@ -29,11 +29,24 @@ body{
     align-items: center;
     justify-content: center;
     width: 50%;
+
 }
 .instagram-phone img{
     height: 50rem;
 }
-
+.photos{
+    position: absolute;
+}
+.first_photo{
+    position: absolute;
+    left: 80px;
+    top: 25px;
+    z-index: 1;
+}
+.second_photo{
+    position: relative;
+    top: 10px;
+}
 /* DIREITA */
 .instagram-continue{
     display: flex;
@@ -121,14 +134,29 @@ body{
     .instagram-wrapper{
         width: 90%;
     }
-
+    .group{
+        min-width: 60%;
+    }
 }
+
+@media (min-width:650px) and (max-width:769px){
+    .instagram-phone{
+        width: 40%;
+    }
+    .instagram-continue{
+        position: relative;
+        left: 50px;
+        width: 60%;
+    }
+}
+
 @media (max-width:650px){  /* até 650px */
     body{
         background-color: #fff;
     }
     .group{
         border: none;
+        width: 80%;
     }
     .instagram-wrapper{
         width: 90%;
@@ -139,5 +167,10 @@ body{
     .instagram-continue{
         width: 100%;
     }
-
+    .download{
+        flex-wrap: wrap;
+    }
+    .app-download{
+        margin: 10px;
+    }
 }
